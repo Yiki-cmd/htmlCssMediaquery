@@ -1,0 +1,32 @@
+/* Basic styles for navbar */
+.navbar{
+    background-color: #333;
+   overflow: hidden; /* Ensures proper layout */
+}
+.nav-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    text-align: center; /* centers text */
+}
+
+.nav-links li{
+    display: inline-block; /* Places links horizontally */
+}
+
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width:600px){
+    .nav-links li {
+        display: block; /* stacks links vertically */
+    }
+    .nav-links{
+        text-align:left;
+    }
+}

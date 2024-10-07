@@ -1,0 +1,29 @@
+/* Default styles for mobile(single column) */
+.grid-container{
+    width:100%;
+
+}
+.grid-item{
+    width:100%;
+    padding:10px;
+    box-sizing: border-box; /* includes padding in width */
+    border: 1px solid #ccc;
+}
+/* Tablet view(two columns) */
+@media(min-width:600px){
+    .grid-item{
+        width:49%; /* Two columns with a small gap */
+        float:left; /* Floats items to the left */
+
+
+    }
+}
+
+/* Desktop view(three columns) */
+@media(min-width:900px){
+    .grid-item{
+        width:32%; /* Three columns with some spacing */
+        float: left;
+
+    }
+}
